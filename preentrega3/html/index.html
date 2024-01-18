@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Sistema de usuarios</title>
+</head>
+<body>
+    <div id="container">
+        <h1>Bienvenido</h1>
+        <div id="mensaje"></div>
+        <form id="formulario">
+          <label for="nombreUsuario">Usuario:</label>
+          <input type="text" id="nombreUsuario" required>
+          <label for="contrasena">Contraseña:</label>
+          <input type="password" id="contrasena" required>
+          <button type="button" id="registrarBtn">Registrar usuario</button>
+          <button type="button" id="loginBtn">Inicia sesion</button>
+        </form>
+    
+        <div id="logged-in">
+          <label for="eleccionMenu">Selecciona una opción:</label>
+          <select id="eleccionMenu" disabled>
+            <option value="0">Seleccione una opción</option>
+            <option value="1">Calcular promedio</option>
+            <option value="2">Realizar operación matemática</option>
+            <option value="3">Salir del sistema</option>
+          </select>
+    
+          <div id="operacionesMatematicas">
+            <label for="num1">Primer número:</label>
+            <input type="number" id="num1">
+            <label for="num2">Segundo número:</label>
+            <input type="number" id="num2">
+            <label for="operacion">Operación matemática:</label>
+            <select id="operacion">
+              <option value="+">Suma</option>
+              <option value="-">Resta</option>
+              <option value="*">Multiplicación</option>
+              <option value="/">División</option>
+            </select>
+            <button type="button" id="realizarOperacionBtn">Realizar Operación</button>
+          </div>
+    
+          <div id="calculoPromedio">
+            <label for="cantidadNotas">Cantidad de Notas:</label>
+            <input type="number" id="cantidadNotas">
+            <div id="notasContainer"></div>
+            <button type="button" id="calcularPromedioBtn">Establecer numero de notas</button>
+          </div>
+        </div>
+    </div>
+    
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
